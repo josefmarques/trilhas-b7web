@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro Tailwind</title>
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 min-h-screen p-8">
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl font-bold text-gray-800 mb-2">Tailwind CSS com Node.js</h1>
+        <p class="text-gray-600 mb-8">Agora usando Tailwind instalado localmente, sem CDN!</p>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Exemplos de cores:</h2>
+                <div class="space-y-4">
+                    <div class="p-4 bg-red-500 text-white rounded">bg-red-500</div>
+                    <div class="p-4 bg-green-500 text-white rounded">bg-green-500</div>
+                    <div class="p-4 bg-blue-500 text-white rounded">bg-blue-500</div>
+                    <div class="p-4 bg-yellow-500 text-white rounded">bg-yellow-500</div>
+                </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Exemplos de espaçamento:</h2>
+                <div class="space-y-4">
+                    <button class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+                        Botão com padding
+                    </button>
+                    <div class="mt-4 p-4 border border-gray-300 rounded">
+                        <p class="mb-2">Margem inferior (mb-2)</p>
+                        <p>Padding interno (p-4)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-xl shadow-lg md:col-span-2">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Teste o IntelliSense:</h2>
+                <p class="text-gray-600 mb-4">Tente digitar classes como <code class="bg-gray-100 px-2 py-1 rounded">text-</code>, <code class="bg-gray-100 px-2 py-1 rounded">bg-</code>, <code class="bg-gray-100 px-2 py-1 rounded">p-</code> no VS Code.</p>
+                <div class="bg-gray-100 p-4 rounded">
+                    <div class="text-lg font-medium text-gray-800">Div de teste - adicione classes aqui:</div>
+                    <div class="mt-2 p-3 bg-white border border-gray-300 rounded">
+                        <!-- Adicione classes Tailwind aqui para testar -->
+                        <div class="text-blue-600 font-bold bg-red-200">Teste de autocompletar!</div>
+                        <div class="text-blue-100 font-bold">Olá Mundo Node.js</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-8 text-sm text-gray-500">
+            <p>Para desenvolvimento, execute: <code class="bg-gray-100 px-2 py-1 rounded">npm run dev</code></p>
+            <p>Para produção, execute: <code class="bg-gray-100 px-2 py-1 rounded">npm run build</code></p>
+        </div>
+    </div>
+</body>
+</html>

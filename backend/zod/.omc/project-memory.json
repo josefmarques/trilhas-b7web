@@ -1,0 +1,65 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1776295546030,
+  "projectRoot": "/home/zemarques/trilha-backend/zod",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "tsconfig.json"
+        ]
+      }
+    ],
+    "frameworks": [],
+    "packageManager": "npm",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {
+      "zod": "node --import=tsx --watch ./src/zod.ts"
+    }
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": "ES modules",
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "src"
+    ],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "src": {
+      "path": "src",
+      "purpose": "Source code",
+      "fileCount": 1,
+      "lastAccessed": 1776295545981,
+      "keyFiles": [
+        "zod.ts"
+      ]
+    }
+  },
+  "hotPaths": [],
+  "userDirectives": []
+}

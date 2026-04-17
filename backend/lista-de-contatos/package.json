@@ -1,0 +1,22 @@
+{
+  "name": "lista-de-contatos",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "src/server.ts",
+  "scripts": {
+    "dev": "node --import=tsx --watch ./src/server.ts"    
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "helmet": "^8.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.3.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}

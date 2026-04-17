@@ -1,0 +1,66 @@
+API lista de contatos
+
+- Criar um novo contato
+- Listar os contatos
+- Excluir um contato
+
+Planejamento de rotas
+
+- POST /contato { name: "João" }
+- GET /contatos
+- DELETE /contato?name=João
+
+Todo o processo:
+
+npm init
+entry point: (index.js) src/server.ts
+
+install dependencias:
+npm i express helmet
+
+npm i -D @types/express @types/node tsx typescript
+
+Configurar o ts 
+npx tsc --init
+
+Configurar no package.json comandos para inicializar o servidor:
+"scripts": {
+    "dev": "node --import=tsx --watch ./src/server.ts"    
+  }
+
+Agora no server.ts fazer as config iniciais:
+
+import express from 'express'
+import helmet from 'helmet'
+import router from './routes'
+
+const server = express();
+
+server.use(helmet());
+server.use(express.json());
+server.use(express.urlencoded({ extended: true }));
+server.use('/', router);
+
+server.listen(3000, () => {
+    console.log('Server is running on port 3000');
+});
+
+
+npm run dev
+
+
+
+
+
+
+
+
+vai no src e cria pasta nova: 
+routes
+    index.ts
+
+
+
+
+
+
