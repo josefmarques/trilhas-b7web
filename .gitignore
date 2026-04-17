@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+.npm
+.yarn
+.pnp.*
+
+# Build outputs
+dist/
+build/
+*.log
+*.tmp
+*.temp
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# System
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Specific to this project (exclude everything except trilhas-B7Web)
+/*
+!/.gitignore
+!/trilhas-B7Web/
+
+# But allow everything inside trilhas-B7Web
+trilhas-B7Web/*
+
+# However, exclude node_modules inside trilhas-B7Web as well (they are already excluded above)
