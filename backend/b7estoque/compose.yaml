@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+  # Serviço do Banco de Dados
+  db:
+    image: postgres:15
+    container_name: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: mrq831028
+      POSTGRES_USER: zemarques
+      POSTGRES_DB: b7estoque
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - pg_data_local:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      prisma-node:
+        aliases:
+          - postgres-service # Garante que a app encontre o banco por este nome
+volumes:
+  pg_data_local:
+
+networks:
+  prisma-node:

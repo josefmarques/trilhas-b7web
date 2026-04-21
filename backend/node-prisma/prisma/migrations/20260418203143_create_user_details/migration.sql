@@ -1,5 +1,5 @@
 -- CreateEnum
-CREATE TYPE "Role" AS ENUM ('ADMIN', 'USER');
+CREATE TYPE "Role" AS ENUM ('USER', 'ADMIN');
 
 -- AlterTable
 ALTER TABLE "User" ADD COLUMN     "createAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -10,7 +10,7 @@ ADD COLUMN     "updateAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP;
 CREATE TABLE "Post" (
     "id" SERIAL NOT NULL,
     "title" TEXT NOT NULL,
-    "subtittle" TEXT,
+    "subtitle" TEXT,
     "body" TEXT NOT NULL,
     "userId" INTEGER NOT NULL,
 

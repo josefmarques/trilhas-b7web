@@ -31,7 +31,7 @@ CREATE TABLE "users" (
 CREATE TABLE "posts" (
     "id" SERIAL NOT NULL,
     "title" TEXT NOT NULL,
-    "subtittle" TEXT,
+    "subtitle" TEXT,
     "body" TEXT NOT NULL,
     "userId" INTEGER NOT NULL,
 

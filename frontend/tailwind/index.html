@@ -4,9 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu primeiro Tailwind</title>
-    <link href="./dist/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class="text-blue-600 bg-red-600">Olá Mundo!</div>
+    <div class="w-46 h-24 p-5">
+        <div class=  "inline-block cursor-pointer bg-blue-500 text-white rounded-md px-5 py-2 border-none">Clique aqui</div>
+        <div class="inline-block cursor-pointer px-5 py-2 rounded-md border border-blue-500 text-red-600">Clique aqui</div>
+        <br>
+        <div class="bg-yellow-100 border-l-4 border-yellow-500 p-3 text-yellow-700">
+            Você não tem mais acesso.
+            <a href="" class="underline ml-1">Faça o upgrade agora!!!</a>
+        </div>
+    </div>
+
+    <br>
+    <div class="w-64 h-48 p-5">
+        <div class="w-96 rounded-md border border-gray-500 bg-white p-4">
+            <div class="inline-block">
+                <img class="w-14 h-14 rounded-full" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+            </div>
+            <div class="inline-block ml-5">
+                <div class="text-black pb-2">Rafaela Silva</div>
+                <div class="text-gray-400">Te mandou um convite</div>
+            </div>
+            <div class="mt-4">
+                <button class="rounded-md px-5 py-2 bg-blue-800 text-white">Aceitar</button>
+                <button class="ml-3 rounded-md px-5 py-2 border border-gray-200 text-black">Negar</button>
+            </div>
+        </div>
+    </div>
+<br>
+    <div class="mt-5 w-auto h-screen p-5 bg-gray-900">
+        <div class="text-white">            
+            <h1 class="text-3xl font-bold text-center">Sistema de Login</h1>
+            <div class="my-6">
+                <label class="block text-lg mb-2" for="emailField">Endereço de e-mail</label>
+                <input class="w-full p-2 rounded-md text-lg bg-gray-800 border border-gray-600 outline-yellow-500" type="email" id="emailField" >
+            </div>
+            <div class="my-6">
+                <label class="block text-lg mb-2" for="passwordField">Senha</label>
+                <input class="w-full p-2 rounded-md text-lg bg-gray-800 border border-gray-600 outline-yellow-500" type="password" id="passwordField" >
+            </div>
+            <div class="my-6">
+                <button class="w-full p-2 rounded-md text-lg font-bold border-none text-white bg bg-yellow-500">Entrar</button>
+            </div>
+        </div>
+        <div class="text-white">            
+            Não é membro? <a class="text-yellow-500 font-bold" href="">Faça seu cadastro agora</a>
+        </div>
+    </div>
 </body>
 </html>

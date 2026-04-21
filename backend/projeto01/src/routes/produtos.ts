@@ -10,7 +10,7 @@ router.post("/", (req, res) => {
     console.log('PARAMS', req.params);
     console.log('QUERY', req.query);
     console.log('BODY', req.body);
-    res.json({ produtos: [] });
+    res.status(201).json({ id: 123, name: 'Teclado XYZ', price: 100.00 });
 });
 
 router.get("/:id", (req, res) => {
