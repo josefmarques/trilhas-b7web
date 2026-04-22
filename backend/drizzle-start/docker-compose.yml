@@ -1,0 +1,24 @@
+services:
+  # Serviço do Banco de Dados
+  db:
+    image: postgres:15
+    container_name: postgresql
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: mrq831028
+      POSTGRES_USER: zemarques
+      POSTGRES_DB: drizzle-orm
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - pg_data_local:/var/lib/postgresql/data
+    ports:
+      - "5432:5432" # Mantendo a 5433 para fugir do seu banco antigo
+    networks:
+      prisma-node:
+        aliases:
+          - postgres-service # Garante que a app encontre o banco por este nome
+volumes:
+  pg_data_local:
+
+networks:
+  prisma-node:
